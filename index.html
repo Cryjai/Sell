@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal補習社 | DSE數學/M2</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f5f7fa; color: #333; font-family: 'Poppins', sans-serif; }
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 2rem;
+    }
+    #header-img {
+      height: 50px;
+      width: auto;
+    }
+    #nav-bar {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: #00b894; }
+    main {
+      margin-top: 70px;
+      padding: 2rem;
+    }
+    section { margin-bottom: 3rem; }
+    h1 { font-size: 2.2rem; margin-bottom: 1rem; color: #00b894; }
+    h2 { font-size: 1.6rem; margin-bottom: 1rem; color: #333; }
+    p { margin-bottom: 1rem; line-height: 1.6; }
+    ul { margin-left: 2rem; margin-bottom: 1rem; }
+    .price-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .price-card h3 { font-size: 1.4rem; color: #00b894; }
+    .price-card p { font-size: 1.1rem; }
+    .price-card .price { font-size: 1.6rem; font-weight: bold; color: #ff6b6b; }
+    #video {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    #form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    #email {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    #submit {
+      background: #00b894;
+      color: #fff;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #submit:hover { background: #009e7f; }
+    /* Media query for mobile */
+    @media (max-width: 768px) {
+      #header { padding: 0.5rem 1rem; flex-direction: column; align-items: center; }
+      #nav-bar { margin-top: 0.5rem; flex-wrap: wrap; justify-content: center; }
+      main { margin-top: 120px; }
+      #video { height: 250px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150x50?text=Crystal+補習" alt="Crystal補習社Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#about">關於我</a>
+      <a class="nav-link" href="#pricing">收費</a>
+      <a class="nav-link" href="#contact">聯絡</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h1>DSE數學同M2補習專家</h1>
+      <h2>我叫Crystal，專補DSE數學同M2，幫你升Grade唔使煩！</h2>
+      <p>無論你係數學廢青定M2高手，我都有一套獨門解題秘笈，幫你喺公開試拎高分。補過我嘅學生，個個都話：「Crystal，你真係救我條命！」</p>
+      <iframe id="video" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen title="Crystal補習社宣傳片"></iframe>
+    </section>
+    <section id="pricing">
+      <h2>補習收費</h2>
+      <div class="price-card">
+        <h3>1人補習</h3>
+        <p class="price">$250/小時</p>
+        <p>一對一，針對你弱點，重點特訓，升Grade最快。</p>
+      </div>
+      <div class="price-card">
+        <h3>2人補習</h3>
+        <p class="price">$200/小時（每人）</p>
+        <p>同friend一齊補，平啲又開心，互相鞭策，進步更快。</p>
+      </div>
+      <div class="price-card">
+        <h3>3人或以上</h3>
+        <p class="price">$180/小時（每人）</p>
+        <p>小組補習，氣氛輕鬆，有問必答，最啱唔想自己一個溫書嘅你。</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>聯絡我</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" target="_blank">
+        <input type="email" id="email" name="email" placeholder="請輸入你的電郵地址" required>
+        <input type="submit" id="submit" value="立即報名">
+      </form>
+    </section>
+  </main>
+</body>
+</html>
